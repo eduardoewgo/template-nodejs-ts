@@ -1,6 +1,11 @@
 # NodeJS Typescript Template 
 Bare template for nodejs + typescript
 
+```
+npm i
+nodemon
+```
+
 ## What is already in here :rocket:
 * eslint
 * ts config
