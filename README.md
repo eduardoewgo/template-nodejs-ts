@@ -8,6 +8,7 @@ Bare template for nodejs + typescript
 * nodemon config
 * file structure following with: router, controller, service, startup config
 * simple jest unit test if you're new to it
+* http requests for quick testing
 
 ## What is missing :construction_worker:
 Well, a lot :smiley:, but I'll to keep this up to date and include a few missing things
@@ -15,3 +16,7 @@ Well, a lot :smiley:, but I'll to keep this up to date and include a few missing
 * proper logging
 * basic security
 * hooks
+
+## Notes
+This is an attempt to help a few folks trying to get a grasp on nodejs(and ts) as well as for my own use :new_moon_with_face:
+
