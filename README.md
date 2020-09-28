@@ -11,7 +11,7 @@ Bare template for nodejs + typescript
 * http requests for quick testing
 
 ## What is missing :construction_worker:
-Well, a lot :smiley:, but I'll to keep this up to date and include a few missing things
+Well, a lot :smiley:, but I'll try to keep this up to date and include a few missing things
 * proper error handling
 * proper logging
 * basic security
