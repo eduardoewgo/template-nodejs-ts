@@ -2,10 +2,15 @@
   "name": "canada-eh-api-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "server.ts",
+  "main": "build/index.js",
   "scripts": {
+    "start": "node .",
+    "build": "tsc",
     "dev": "nodemon",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint src/** --fix",
+    "unit": "jest",
+    "unit:coverage": "jest --collect-coverage"
   },
   "keywords": [],
   "author": "",

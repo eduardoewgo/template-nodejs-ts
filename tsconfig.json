@@ -17,6 +17,8 @@
     "node_modules",
     "http",
     "build",
+    "coverage",
+    "dist",
     "**/*.spec.ts",
     "jest.config.js"
   ]
