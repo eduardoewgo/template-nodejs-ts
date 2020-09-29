@@ -6,7 +6,7 @@ import cors from 'cors'
 const app = express()
 
 import { loadConfig } from './config/config'
-import { load as loadUserRoutes } from './routes/user-routes';
+import userRoutes from './routes/user-routes';
 
 (async () => {
   app.use(morgan('dev'))
@@ -15,10 +15,11 @@ import { load as loadUserRoutes } from './routes/user-routes';
 
   const config = await loadConfig()
 
-  loadUserRoutes(app)
+  // Routes
+  app.use('/users', userRoutes)
 
+  // Change for your healthy checks
   app.get('/health', (req: Request, res: Response): void => {
-    // Change for your healthy checks
     res.send({ healthy: true })
   })
 
