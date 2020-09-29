@@ -1,15 +1,15 @@
-version: '3.1'
+version: "3.1"
 
 services:
- mysql:
-   container_name: mysql-db
-   image: mysql
-   command: --default-authentication-plugin=mysql_native_password
-   restart: always
-   ports:
-     - 3306:3306
-   environment:
-     MYSQL_ROOT_PASSWORD: passw0rd
-     MYSQL_DATABASE: mylocal
-     MYSQL_USER: myuser
-     MYSQL_PASSWORD: passw0rd
+  postgres:
+    container_name: postgres-db
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - ./prisma/scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      - POSTGRES_DB=my_local
+      - POSTGRES_USER=my_user
+      - POSTGRES_PASSWORD=passw0rd
