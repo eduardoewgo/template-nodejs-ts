@@ -4,7 +4,7 @@ interface User {
     phoneNumber?: number;
 }
 
-export const getAll = (): User[] => {
+export function getAll(): User[] {
     // Your stuff here
     return []
 }
