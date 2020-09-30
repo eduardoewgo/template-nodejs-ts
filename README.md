@@ -16,6 +16,8 @@ nodemon
 - file structure following with: router, controller, service, startup config
 - simple jest unit test if you're new to it
 - http requests for quick testing
+- local db (docker) - added September 30, 2020 :heavy_check_mark:
+- [Prisma ORM](https://www.prisma.io/) - added September 30, 2020 :heavy_check_mark:
 
 ## What is missing :construction_worker:
 
@@ -26,9 +28,6 @@ Well, a lot :smiley:, but I'll try to keep this up to date and include a few mis
 - basic security
 - hooks
 - swagger
-- docker
-- database
-- orm(probably Prisma or Sequelize) with proper DAOS
 
 ## Notes
 
