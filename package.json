@@ -10,6 +10,8 @@
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint src/** --fix",
     "unit": "jest",
+    "docker:start": "docker-compose up -d",
+    "docker:stop": "docker-compose stop",
     "unit:coverage": "jest --collect-coverage",
     "prisma:init": "npx prisma init",
     "prisma:introspect": "npx prisma introspect",

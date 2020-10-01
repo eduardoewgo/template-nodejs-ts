@@ -20,7 +20,7 @@ import userRoutes from './routes/user-routes';
 
   // Change for your healthy checks
   app.get('/health', (req: Request, res: Response): void => {
-    res.send({ healthy: true })
+    res.json({ healthy: true })
   })
 
   app.listen(config.application.port, () => {

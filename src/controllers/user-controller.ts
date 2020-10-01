@@ -1,7 +1,8 @@
 import { Request, Response } from 'express'
 import * as userService from '../services/user-service'
 
-export function getAll(req: Request, res: Response): void {
-    // Your stuff here
-    res.json(userService.getAll())
+export async function findAll(req: Request, res: Response): Promise<void> {
+  // Your stuff here
+  const users = await userService.findAll()
+  res.json(users)
 }

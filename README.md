@@ -4,7 +4,8 @@ Bare template for nodejs + typescript
 
 ```
 npm i
-nodemon
+npm run docker:start
+npm run dev
 ```
 
 ## What is already in here :rocket:
@@ -28,6 +29,7 @@ Well, a lot :smiley:, but I'll try to keep this up to date and include a few mis
 - basic security
 - hooks
 - swagger
+- middlewares
 
 ## Notes
 

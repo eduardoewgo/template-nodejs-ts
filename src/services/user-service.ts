@@ -1,10 +1,8 @@
-interface User {
-    id: string;
-    name: string;
-    phoneNumber?: number;
-}
+import { PrismaClient, User } from '@prisma/client'
 
-export function getAll(): User[] {
-    // Your stuff here
-    return []
+const prisma = new PrismaClient()
+const { user } = prisma
+
+export function findAll(): Promise<User[]> {    
+  return user.findMany()
 }
